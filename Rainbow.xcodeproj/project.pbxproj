@@ -12,11 +12,11 @@
 		ED2BA45A29368C4F002D8385 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2BA45929368C4F002D8385 /* Assets.xcassets */; };
 		ED2BA45D29368C4F002D8385 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2BA45C29368C4F002D8385 /* Preview Assets.xcassets */; };
 		ED2BA46429368DBA002D8385 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46329368DBA002D8385 /* HomeViewModel.swift */; };
-		ED2BA46629368ED9002D8385 /* RainbowDropDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46529368ED9002D8385 /* RainbowDropDelegate.swift */; };
 		ED2BA46829369BA2002D8385 /* CorrectAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46729369BA2002D8385 /* CorrectAnswerView.swift */; };
 		ED2BA46A29369ED5002D8385 /* IncorrectAnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46929369ED5002D8385 /* IncorrectAnswerView.swift */; };
 		ED2BA46C2936A0BB002D8385 /* RainbowButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46B2936A0BB002D8385 /* RainbowButtonView.swift */; };
 		ED2BA4702936A69C002D8385 /* ColorSquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2BA46F2936A69C002D8385 /* ColorSquareView.swift */; };
+		ED8B2B282B30BF03004518EB /* InstructionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8B2B272B30BF03004518EB /* InstructionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +26,11 @@
 		ED2BA45929368C4F002D8385 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED2BA45C29368C4F002D8385 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ED2BA46329368DBA002D8385 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		ED2BA46529368ED9002D8385 /* RainbowDropDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowDropDelegate.swift; sourceTree = "<group>"; };
 		ED2BA46729369BA2002D8385 /* CorrectAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectAnswerView.swift; sourceTree = "<group>"; };
 		ED2BA46929369ED5002D8385 /* IncorrectAnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncorrectAnswerView.swift; sourceTree = "<group>"; };
 		ED2BA46B2936A0BB002D8385 /* RainbowButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainbowButtonView.swift; sourceTree = "<group>"; };
 		ED2BA46F2936A69C002D8385 /* ColorSquareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSquareView.swift; sourceTree = "<group>"; };
+		ED8B2B272B30BF03004518EB /* InstructionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,6 @@
 				ED2BA45529368C4A002D8385 /* RainbowApp.swift */,
 				ED2BA46E2936A1D7002D8385 /* HomeView */,
 				ED2BA46D2936A1CC002D8385 /* Views */,
-				ED2BA46529368ED9002D8385 /* RainbowDropDelegate.swift */,
 				ED2BA45929368C4F002D8385 /* Assets.xcassets */,
 				ED2BA45B29368C4F002D8385 /* Preview Content */,
 			);
@@ -84,6 +83,7 @@
 		ED2BA46D2936A1CC002D8385 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ED8B2B272B30BF03004518EB /* InstructionsView.swift */,
 				ED2BA46F2936A69C002D8385 /* ColorSquareView.swift */,
 				ED2BA46B2936A0BB002D8385 /* RainbowButtonView.swift */,
 				ED2BA46729369BA2002D8385 /* CorrectAnswerView.swift */,
@@ -129,7 +129,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					ED2BA45129368C4A002D8385 = {
 						CreatedOnToolsVersion = 14.0;
@@ -172,10 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2BA45829368C4A002D8385 /* HomeView.swift in Sources */,
+				ED8B2B282B30BF03004518EB /* InstructionsView.swift in Sources */,
 				ED2BA46429368DBA002D8385 /* HomeViewModel.swift in Sources */,
 				ED2BA46829369BA2002D8385 /* CorrectAnswerView.swift in Sources */,
 				ED2BA4702936A69C002D8385 /* ColorSquareView.swift in Sources */,
-				ED2BA46629368ED9002D8385 /* RainbowDropDelegate.swift in Sources */,
 				ED2BA46A29369ED5002D8385 /* IncorrectAnswerView.swift in Sources */,
 				ED2BA45629368C4A002D8385 /* RainbowApp.swift in Sources */,
 				ED2BA46C2936A0BB002D8385 /* RainbowButtonView.swift in Sources */,
@@ -221,6 +221,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -281,6 +282,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

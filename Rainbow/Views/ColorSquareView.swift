@@ -17,6 +17,7 @@ struct ColorSquareView: View {
             .frame(width: 80, height: 80)
             .cornerRadius(10)
             .shadow(color: Color(color).opacity(0.8), radius: 5)
+            .draggable(color)
         
     }
     

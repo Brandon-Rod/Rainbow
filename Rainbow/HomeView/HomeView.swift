@@ -17,8 +17,7 @@ struct HomeView: View {
             
             VStack(alignment: .leading, spacing: 20) {
                 
-                Text("Drag and drop the colors from left to right to match the rainbow.")
-                    .font(.title2)
+                InstructionsView()
                 
                 Spacer()
                 
@@ -27,14 +26,17 @@ struct HomeView: View {
                     ForEach(viewModel.colors, id: \.self) { color in
                         
                         ColorSquareView(color: color)
-                            .onDrag({
+                            .dropDestination(for: String.self) { droppedTask, _ in
 
-                                viewModel.draggedColor = color
-                                return NSItemProvider(item: nil, typeIdentifier: color)
-
-                            })
-                            .onDrop(of: [.text], delegate: RainbowDropDelegate(color: color, colors: $viewModel.colors, draggedColor: $viewModel.draggedColor))
-                        
+                                let draggedColor = droppedTask.first!
+                                let from = viewModel.colors.firstIndex(of: draggedColor)
+                                let to = viewModel.colors.firstIndex(of: color)
+                                viewModel.colors.move(fromOffsets: IndexSet(integer: from!), toOffset: (to! > from! ? to! + 1 : to)!)
+                                
+                                return true
+                                
+                            }
+                            
                     }
                     
                 }
@@ -51,13 +53,11 @@ struct HomeView: View {
                     
                     if viewModel.colors == viewModel.correctOrder {
                         
-                        viewModel.rainbowCorrect = true
-                        viewModel.isShowingOverlay = true
+                        viewModel.rainbow()
                         
                     } else {
                         
-                        viewModel.rainbowCorrect = false
-                        viewModel.isShowingOverlay = true
+                        viewModel.incorrectRainbow()
                         
                     }
                     
